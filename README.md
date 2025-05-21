@@ -7,7 +7,7 @@ Este é um programa web interativo que permite ao usuário **plotar gráficos de
 ## 🚀 Funcionalidades
 
 - Suporte a funções:
-  - Polinomiais, lineares, racionais, exponenciais, logarítmicas e trigonométricas
+- Polinomiais, lineares, racionais, exponenciais, logarítmicas e trigonométricas
 - Plotagem dinâmica e responsiva com `Chart.js`
 - Interface simples com seleção de funções
 ---

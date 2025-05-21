@@ -153,10 +153,10 @@ tipoFuncaoSelect.addEventListener('change', () => {
 
 if (!inputFuncao.value) {
     inputFuncao.value = 'x';
-    inputXMin.value = '-10';
-    inputXMax.value = '10';
-    inputYMin.value = '-10';
-    inputYMax.value = '10';
+    inputXMin.value = '-15';
+    inputXMax.value = '15';
+    inputYMin.value = '-15';
+    inputYMax.value = '15';
 }
 
 botaoDesenhar.addEventListener('click', desenharGrafico);

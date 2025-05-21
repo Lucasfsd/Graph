@@ -187,3 +187,51 @@ right: 20px;
 .darkmode #themeswitch svg:last-child {
     display : block;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .layout-horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #graficoArea {
+    width: 100%;
+    padding: 10px;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: auto;
+  }
+
+  #controles {
+    width: 100%;
+    align-items: center;
+  }
+
+  #controles input,
+  #controles select,
+  #controles button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  input[type="number"],
+  input[type="text"],
+  select {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  #themeswitch {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
