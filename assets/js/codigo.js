@@ -138,6 +138,8 @@ tipoFuncaoSelect.addEventListener('change', () => {
         'logaritmica': { func: 'log10(x)', xMin: 0.1, xMax: 10, yMin: -1, yMax: 2 },
         'exponencial': { func: 'exp(x)', xMin: -2, xMax: 5, yMin: -1, yMax: 150 },
         'polinomial': { func: 'x^2', xMin: -10, xMax: 10, yMin: -10, yMax: 100 },
+        'Trigonométrica': { func: 'cos(x) + sin(x)', xMin: -10, xMax: 10, yMin: -10, yMax: 10 },
+        'Composta': { func: 'sin(x^2)', xMin: -10, xMax: 10, yMin: -10, yMax: 10 },
         'linear': { func: 'x', xMin: -10, xMax: 10, yMin: -10, yMax: 10 }
     };
 
