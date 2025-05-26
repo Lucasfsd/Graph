@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +10,7 @@
     <script type="text/javascript" src="assets/js/darkmode.js" defer></script>
 </head>
 <body>
-<img src="assets/images/anhanguera.png"></img>
+<img src="assets/images/anhanguera.png" width="%"></img>
   <style>
         body.darkmode {
             background-color: #141413;
@@ -17,14 +18,12 @@
         }
     </style>
 
-
 <header>
-    
-    <button id="themeswitch">
+    <button id="themeswitch" aria-label="Alternar tema">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
             <path d="M484-80q-84 0-157.5-32t-128-86.5Q144-253 112-326.5T80-484q0-146 93-257.5T410-880q-18 99 11 193.5T521-521q71 71 165.5 100T880-410q-26 144-138 237T484-80Z"/>
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3">
             <path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/>
         </svg>
     </button>
@@ -33,30 +32,38 @@
 <div id="graficoArea">
     <div class="layout-horizontal">
         <div id="controles">
+            
             <label for="tipoFuncao">Tipo de Função: </label>
-            <select id="tipoFuncao">
+            <select id="tipoFuncao" aria-label="Selecione o tipo de função">
                 <option value="" disabled selected>Selecione uma função</option>
+                <option value="Linear">Linear</option>
                 <option value="logaritmica">Logarítmica</option>
                 <option value="exponencial">Exponencial</option>
                 <option value="polinomial">Polinomial</option>
                 <option value="Composta">Composta</option>
-                <option value="Trigonométrica">Trigonometrica</option>
+                <option value="Trigonométrica">Trigonométrica</option>
+                <option value="Racional">Racional</option>
             </select>
             <label for="funcao">Função: </label>
-            <input type="text" id="funcao" value="">
+            <input type="text" id="funcao" value="" aria-label="Insira a função matemática"> 
             <label for="xMin">Min de x:</label>
-            <input type="number" id="xMin" value="-10">
+            <input type="number" id="xMin" value="-10" aria-label="Valor mínimo de x">
             <label for="xMax">Max de x:</label>
-            <input type="number" id="xMax" value="10">
+            <input type="number" id="xMax" value="10" aria-label="Valor máximo de x">
             <label for="yMin">Min de y:</label>
-            <input type="number" id="yMin" value="-10">
+            <input type="number" id="yMin" value="-10" aria-label="Valor mínimo de y">
             <label for="yMax">Max de y:</label>
-            <input type="number" id="yMax" value="10">
-            <button id="desenharGrafico">Desenhar Gráfico</button>
+            <input type="number" id="yMax" value="10" aria-label="Valor máximo de y">
+            <button id="desenharGrafico" aria-label="Desenhar gráfico">Desenhar Gráfico</button>
+            
         </div>
-        <canvas id="meuGrafico" width="900" height="550"></canvas>
+        
+        <canvas id="meuGrafico" width="900" height="550" aria-label="Área do gráfico"></canvas>
     </div>
-    <div id="mensagem"></div>
+    <div id="mensagem" aria-live="polite"></div>
+    <div id="infoFuncao" style="margin-top: 24px;"></div>
+    
+    
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/mathjs@12.4.0/lib/browser/math.js"></script>
