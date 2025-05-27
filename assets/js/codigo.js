@@ -202,7 +202,7 @@ function desenharGrafico() {
 
     animarGrafico(segmentosFiltrados, xMin, xMax, yMin, yMax);
 
-    // ➡️ Mostra "Carregando..." enquanto espera explicação da IA
+  
     document.getElementById("infoFuncao").innerHTML = "<b>Carregando explicação...</b>";
     generateExplanation(funcaoStr);
 }
