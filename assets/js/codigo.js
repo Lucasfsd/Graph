@@ -1,3 +1,24 @@
+// --- Dark Mode ---
+let darkmode = localStorage.getItem('darkmode');
+const themeswitch = document.getElementById('themeswitch');
+
+const enableDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+}
+const disableDarkMode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', null);
+}
+if (darkmode === "active") {
+    enableDarkMode();
+}
+themeswitch.addEventListener('click', () => {
+    darkmode = localStorage.getItem('darkmode');
+    darkmode!== "active" ? enableDarkMode() : disableDarkMode()
+});
+
+// --- Gráfico ---
 const canvas = document.getElementById('meuGrafico');
 const ctx = canvas.getContext('2d');
 const inputFuncao = document.getElementById('funcao');
@@ -175,10 +196,15 @@ function desenharGrafico() {
     if (!segmentosFiltrados.length) {
         mensagemErro.textContent = 'Nenhum ponto válido para plotar. Verifique a função.';
         if (grafico) grafico.destroy();
+        document.getElementById("infoFuncao").innerHTML = '';
         return;
     }
 
     animarGrafico(segmentosFiltrados, xMin, xMax, yMin, yMax);
+
+    // ➡️ Mostra "Carregando..." enquanto espera explicação da IA
+    document.getElementById("infoFuncao").innerHTML = "<b>Carregando explicação...</b>";
+    generateExplanation(funcaoStr);
 }
 
 tipoFuncaoSelect.addEventListener('change', () => {
