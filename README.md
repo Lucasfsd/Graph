@@ -22,7 +22,6 @@ Este é um programa web interativo que permite ao usuário **plotar gráficos de
 | Logarítmica    | `log10(x)`, `ln(x)`        |
 | Trigonométrica | `sin(x)`, `cos(x) + sin(x)`|
 | Composta       | `sin(x^2)`, `exp(-x^2)`    |
-| Constantes     | `pi`, `e`                  |
 > ⚠️ Para funções como `log(x)` ou `1/x`, evite valores de `x` próximos de 0.
 
 ---
