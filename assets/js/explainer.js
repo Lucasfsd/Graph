@@ -20,7 +20,7 @@ async function generateExplanation(prompt) {
 }
 
 async function callGeminiAPI(prompt) {
-    const apiKey = 'AIzaSyA0MpQGcK8aOmtwxc72BdKwDzKgle5vqBE';
+    const apiKey = 'AIzaSyAgAqK5WnI942DKGtSbwHFAkyAYHE5zgKw';
     const url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' + apiKey;
 
     const body = {
