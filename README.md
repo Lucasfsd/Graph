@@ -13,15 +13,15 @@ Este é um programa web interativo que permite ao usuário **plotar gráficos de
 ---
 ## 🧮 Exemplos de funções suportadas
 
-| Tipo           | Exemplo                    |
-|----------------|----------------------------|
-| Polinomial     | `x^2`, `x^3 - 2x + 1`      |
-| Linear         | `2x + 1`, `-0.5x`          |
-| Racional       |`1 / x`, `(x^2 - 1) / (x-1)`|
-| Exponencial    | `exp(x)`, `2^x`            |
-| Logarítmica    | `log10(x)`, `ln(x)`        |
-| Trigonométrica | `sin(x)`, `cos(x) + sin(x)`|
-| Composta       | `sin(x^2)`, `exp(-x^2)`    |
+| Tipo           | Exemplo                      |
+|----------------|------------------------------|
+| Polinomial     | `x^2`, `x^3 - 2x + 1`        |
+| Linear         | `2x + 1`, `-0.5x`            |
+| Racional       | `1 / x`, `(x^2 - 1) / (x-1)` |
+| Exponencial    | `exp(x)`, `2^x`              |
+| Logarítmica    | `log10(x)`, `ln(x)`          |
+| Trigonométrica | `sin(x)`, `cos(x) + sin(x)`  |
+| Composta       | `sin(x^2)`, `exp(-x^2)`      |
 > ⚠️ Para funções como `log(x)` ou `1/x`, evite valores de `x` próximos de 0.
 
 ---
